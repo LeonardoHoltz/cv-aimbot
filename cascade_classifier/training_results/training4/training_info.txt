@@ -1,0 +1,1 @@
+"C:\Users\br31427\opencv\build\x64\vc15\bin\opencv_traincascade.exe" -data ./training_results/training4/ -vec ./training_results/training2/pos.vec -bg neg.txt -w 24 -h 32 -numPos 200 -numNeg 400 -numStages 20

@@ -1,0 +1,22 @@
+I will define %OPENCV_TRAINING% as the folder where the opencv training programs are
+(I tried to use an environment variable but i'm too dumb to run the code with it)
+
+Mine is: C:\Users\[YOUR_USER_HERE]\opencv\build\x64\vc15\bin\
+
+# Annotation:
+
+%OPENCV_TRAINING%opencv_annotation.exe --annotations=annotation_file.txt --images=pathtoimagesfolder
+
+# Samples Creation
+
+%OPENCV_TRAINING%opencv_createsamples.exe -info pos.txt -w 24 -h 32 -num 250 -vec pos.vec
+
+where:
+-num has to be bigger than the total number of rectangles annotated
+-vec is the vector file input that the cascade training will receive
+
+# Training
+
+%OPENCV_TRAINING%opencv_traincascade.exe -data ./training_results/training2/ -vec ./training_results/training2/pos.vec -bg neg.txt -w 24 -h 32 -numPos 180 -numNeg 360 -numStages 18
+
+i took an advise to put numPos as a subset of the total positive images and numNEg twice the amount of numPos

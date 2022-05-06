@@ -1,0 +1,3 @@
+%OPENCV_TRAINING%opencv_createsamples.exe -info pos.txt -w 24 -h 32 -num 200 -vec pos.vec
+
+%OPENCV_TRAINING%opencv_traincascade.exe -data ./training_results/training2/ -vec ./training_results/training2/pos.vec -bg neg.txt -w 24 -h 32 -numPos 200 -numNeg 200 -numStages 20

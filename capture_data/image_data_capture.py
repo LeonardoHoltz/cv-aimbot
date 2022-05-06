@@ -32,5 +32,5 @@ while(True):
 
     elif key == ord('j'):
         # Set positive image data
-        cv.imwrite('../dataset/positive/positive{}.jpg'.format(loop_time), screenshot)
+        cv.imwrite('../dataset/positive/near/positive{}.jpg'.format(loop_time), screenshot)
 

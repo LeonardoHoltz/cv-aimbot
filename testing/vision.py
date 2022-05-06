@@ -87,7 +87,7 @@ class Vision:
     # all of those rectangles drawn
     def draw_rectangles(self, haystack_img, rectangles):
         # these colors are actually BGR
-        line_color = (0, 255, 0)
+        line_color = (255, 0, 0)
         line_type = cv.LINE_4
 
         for (x, y, w, h) in rectangles:

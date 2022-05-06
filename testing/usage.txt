@@ -1,0 +1,8 @@
+With the counter strike open:
+
+Python tester.py
+
+keys (the tester.py window needs to be current window):
+
+Q - quit
+C - activate/desactivate the aimbot
