@@ -26,8 +26,8 @@ def GetSmallestRectangle(rectangles):
 
 wcap = WindowCapture('Counter-Strike: Global Offensive - Direct3D 9')
 
-#model = cv.CascadeClassifier('../cascade_classifier/training_results/training4/cascade.xml')
-model = cv.CascadeClassifier('../cascade_classifier/training_results/pedestrian_detection/haarcascade_fullbody.xml')
+model = cv.CascadeClassifier('../cascade_classifier/training_results/training4/cascade.xml')
+#model = cv.CascadeClassifier('../cascade_classifier/training_results/pedestrian_detection/haarcascade_fullbody.xml')
 
 vision = Vision(None)
 
